@@ -1,4 +1,4 @@
-const sequelize = require('sequelize');
+const Sequelize = require('sequelize');
 const User = require('./user');
 const Post = require('./post');
 const Hashtag = require('./hashtag');
