@@ -5,5 +5,9 @@ exports.renderJoin = (req, res, next) => {
     res.render('join', { title: '회원가입 - NodeBird' });
 };
 exports.renderMain = (req, res, next) => {
-    res.render('main', { title: 'NodeBird' });
+    const twits = [];
+    res.render('main', {
+        title: 'NodeBird',
+        twits,
+    });
 };
