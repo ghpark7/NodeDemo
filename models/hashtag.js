@@ -1,10 +1,10 @@
-const sequelize = require('sequelize');
+const Sequelize = require('sequelize');
 
-class Hashtag extends sequelize.Model {
+class Hashtag extends Sequelize.Model {
     static initiate(sequelize) {
         Hashtag.init({
             title: {
-                type: sequelize.STRING(15),
+                type: Sequelize.STRING(15),
                 allowNull: false,
                 unique: true,
             },

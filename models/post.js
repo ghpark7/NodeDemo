@@ -1,14 +1,14 @@
-const sequelize = require('sequelize');
+const Sequelize = require('sequelize');
 
-class Post extends sequelize.Model {
+class Post extends Sequelize.Model {
     static initiate(sequelize) {
         Post.init({
             content: {
-                type: sequelize.STRING(140),
+                type: Sequelize.STRING(140),
                 allowNull: false,
             },
             img: {
-                type: sequelize.STRING(200),
+                type: Sequelize.STRING(200),
                 allowNull: true,
             },
         }, {
