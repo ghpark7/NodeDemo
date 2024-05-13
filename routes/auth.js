@@ -15,4 +15,14 @@ router.post('/login', isNotLoggedIn, login);
 // GET /auth/logout
 router.get('/logout', isLoggedIn, logout);
 
+// GET /auth/kakao
+router.get('/kakao', passport.authenticate('kakao'));
+
+// GET /auth/kakao/callback
+router.get('/kakao/callback', passport.authenticate('kakao', {
+    failureRedirect: '/',
+}), (req, res) => {
+    res.redirect('/'); // 성공 시 /로 이동
+});
+
 module.exports = router;
