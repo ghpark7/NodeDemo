@@ -102,6 +102,15 @@ input[type='text'], input[type='email'], input[type='password'], textarea {
 .twit-img { text-align: center; }
 .twit-img img { max-width: 75%; }
 .error-message { color: red; font-weight: bold; }
+.delete-btn {
+  padding: 1px 5px;
+  background: #fff;
+  border: 1px solid silver;
+  border-radius: 5px;
+  color: crimson;
+  font-size: 12px;
+  cursor: pointer;
+}
 #search-form { text-align: right; }
 #join-form { padding: 10px; text-align: center; }
 #hashtag-form { text-align: right; }
