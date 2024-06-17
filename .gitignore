@@ -3,3 +3,6 @@ node_modules/
 
 # .env 파일 무시
 .env
+
+# .DS_Store 파일 무시
+.DS_Store
