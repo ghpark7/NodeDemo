@@ -10,7 +10,7 @@ exports.uploadPost = async (req, res, next) => {
         const post = await Post.create({
             content: req.body.content,
             img: req.body.url,
-            userId: req.user.id,
+            UserId: req.user.id,
         });
         const hashtags = req.body.content.match(/#[^\s#]+/g);
         if (hashtags) {
