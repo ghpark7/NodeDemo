@@ -37,9 +37,6 @@
             {% if twit.img %}
               <div class="twit-img"><img src="{{twit.img}}" alt="섬네일"></div>
             {% endif %}
-            {% if twit %}
-              <a href="/post/{{twit.id}}/delete" class="btn delete-btn">게시글 삭제</a>
-            {% endif %}
           </div>
         {% endfor %}
       </div>
@@ -81,20 +78,6 @@
             }
           }
         }
-      });
-    });
-    document.querySelectorAll('.delete-btn').forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        if (confirm('게시글을 삭제하시겠습니까?')) {
-          axios.get(btn.href)  // axios.delete 대신 axios.get 사용
-            .then(() => {
-              location.reload();
-            })
-            .catch((err) => {
-              console.error(err);
-            });
-        } 
       });
     });
   </script>

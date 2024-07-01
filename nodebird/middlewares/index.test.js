@@ -1,5 +1,3 @@
-const e = require('express');
-const { describe } = require('../models/user');
 const { isLoggedIn, isNotLoggedIn } = require('./');
 
 describe('isLoggedIn', () => {
@@ -32,7 +30,7 @@ describe('isNotLoggedIn', () => {
         redirect: jest.fn(),
     };
     const next = jest.fn();
-
+    
     test('로그인이 되어 있으면 isNotLoggedIn이 에러를 응답해야 함', () => {
         const req = {
             isAuthenticated: jest.fn(() => true),

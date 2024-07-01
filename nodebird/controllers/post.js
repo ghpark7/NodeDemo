@@ -15,7 +15,7 @@ exports.uploadPost = async (req, res, next) => {
         const hashtags = req.body.content.match(/#[^\s#]+/g);
         if (hashtags) {
             const result = await Promise.all(
-                hashtags.map((tag) => {
+                hashtags.map(tag => {
                     return Hashtag.findOrCreate({
                         where: { title: tag.slice(1).toLowerCase() },
                     })
