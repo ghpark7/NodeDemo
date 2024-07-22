@@ -13,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "connect-redis": "^7.1.1",
     "cookie-parser": "^1.4.6",
     "cross-env": "^7.0.3",
     "csurf": "^1.11.0",
@@ -29,6 +30,7 @@
     "passport-kakao": "^1.0.1",
     "passport-local": "^1.0.0",
     "pm2": "^5.4.2",
+    "redis": "^4.6.15",
     "sanitize-html": "^2.13.0",
     "sequelize": "^6.37.3",
     "sequelize-cli": "^6.6.2",
