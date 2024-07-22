@@ -6,3 +6,7 @@ node_modules/
 
 # .DS_Store 파일 무시
 .DS_Store
+
+uploads
+*.log
+coverage
